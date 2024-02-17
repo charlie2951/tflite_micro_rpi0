@@ -19,10 +19,11 @@ pip install tflite_micro_runtime-1.2.2-cp39-cp39-linux_armv6l.whl
 ```
 This will install Tensorflow-Lite-micro runtime into your system. Note that Numpy is required for this and it will be automatically downloaded during installation. If you do not want to install numpy then run the pip command along with *--no-deps* flag.  <br>
 Note that basic functionalities and API for Tensorflow-Lite and Tensorflow-Lite-Micro (mainly targetted for Microcontrollers) are similar. In case of tflite-micro, some advanced models and functions are not included. Refer to the official documentation of Tensorflow for this.  TFLITE MICRO is are mainly for tiny microcontrollers with little memory footprints whereas TFLITE is extensively used in Android/IOS apps. RPI-0 belongs to ARM-6 architecture, the default Neural network lib from Tensorflow source code is not optimized. The tflite-micro runtime package is compiled using ARM CMSIS NN library which is optimized for armv6 architecture. <br>
-This repo contain some pre-trained models **(CIFAR-10 image classification, MNIST Digit identifier)** converted into TFLITE format and accessable using the tflite-micro runtime. Check the individual directory for the descriptions and source code. These code has been tested on RPI-0 with Raspberrian Bullseye OS with Python V3.9 and they are working properly. These codes are also tested for ***real time input data taken from Raspberry-Pi camera module.*** <br>
+This repo contain some pre-trained models **(Hello Sine, CIFAR-10 image classification, MNIST Digit identifier)** converted into TFLITE format and accessable using the tflite-micro runtime. Check the individual directory for the descriptions and source code. These code has been tested on RPI-0 with Raspberrian Bullseye OS with Python V3.9 and they are working properly. These codes are also tested for ***real time input data taken from Raspberry-Pi camera module.*** <br>
 
 ## List of Tested Projects using TFLITE-MICRO Runtime <br>
 These models are trained on desktop.Google Colab and trained model is converted to TFLITE format. Then, these models are transferred into Raspberry Pi using sftp and Inference was performed. <br>
-1. MNIST Handwritten digit classification using fully connected ANN model
-2. CIFAR-10 image classification with Convolutional Neural Network  (classify images from 10 different category)
+1.Sine wave prediction using fully connected ANN model
+2. MNIST Handwritten digit classification using fully connected ANN model
+3. CIFAR-10 image classification with Convolutional Neural Network  (classify images from 10 different category)
    
