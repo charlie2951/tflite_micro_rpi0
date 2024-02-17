@@ -1,3 +1,4 @@
+#Run this script on Pi-Zero
 import numpy as np
 import tflite_micro_runtime.interpreter as tf
 import cv2
@@ -10,8 +11,9 @@ output_details = interpreter.get_output_details()[0]
 img=cv2.imread('0.png')
 x_test = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 x_test = cv2.resize(x_test,(28,28))
+#Invert the image because in MNIST dataset, digit pixels are white
 x_test = cv2.bitwise_not(x_test)
-x_test = x_test/255
+x_test = x_test/255 #Normalize image data in between 0 and 1
 #Apply input (here we are applying scaled input from test set)
 #Later we shall go for live classification
 # Invoke the interpreter
