@@ -8,7 +8,7 @@ interpreter.allocate_tensors()
 input_details = interpreter.get_input_details()[0]
 output_details = interpreter.get_output_details()[0]
 #Read image and transform and resizing using OpenCV
-img=cv2.imread('0.png')
+img=cv2.imread('0.png') #put input file here for classification
 x_test = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 x_test = cv2.resize(x_test,(28,28))
 #Invert the image because in MNIST dataset, digit pixels are white
