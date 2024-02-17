@@ -1,4 +1,6 @@
 #Live image classification using TFLITE MICRO 
+#Run this script on Pi-Zero
+#Make sure that OpenCV and Numpy is installed
 import cv2
 import numpy as np
 cam = cv2.VideoCapture(0)
