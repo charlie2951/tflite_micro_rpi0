@@ -22,8 +22,9 @@ Note that basic functionalities and API for Tensorflow-Lite and Tensorflow-Lite-
 This repo contain some pre-trained models **(Hello Sine, CIFAR-10 image classification, MNIST Digit identifier)** converted into TFLITE format and accessable using the tflite-micro runtime. Check the individual directory for the descriptions and source code. These code has been tested on RPI-0 with Raspberrian Bullseye OS with Python V3.9 and they are working properly. These codes are also tested for ***real time input data taken from Raspberry-Pi camera module.*** <br>
 
 ## List of Tested Projects using TFLITE-MICRO Runtime <br>
-These models are trained on desktop.Google Colab and trained model is converted to TFLITE format. Then, these models are transferred into Raspberry Pi using sftp and Inference was performed. <br>
-1.Sine wave prediction using fully connected ANN model
-2. MNIST Handwritten digit classification using fully connected ANN model
+*These models are trained on desktop.Google Colab and trained model is converted to TFLITE format. Then, these models are transferred into Raspberry Pi using sftp and Inference was performed.* <br>
+
+1.Sine wave prediction using fully connected ANN model<br>
+2. MNIST Handwritten digit classification using fully connected ANN model<br>
 3. CIFAR-10 image classification with Convolutional Neural Network  (classify images from 10 different category)
    
